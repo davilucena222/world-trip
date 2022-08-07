@@ -1,8 +1,13 @@
-import { ChakraProvider, theme } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-ui/react";
 import { AppProps } from "../../node_modules/next/app";
+import { theme } from "../styles/theme";
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 function App({ Component, pageProps }: AppProps) {
-  return(
+  return (
     <ChakraProvider theme={theme}>
       <Component {...pageProps} />
     </ChakraProvider>

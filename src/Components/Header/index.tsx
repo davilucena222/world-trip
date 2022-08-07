@@ -1,6 +1,6 @@
 import { Flex, Grid, Image } from "@chakra-ui/react";
 
-export default function Header() {
+export function Header() {
   return (
     <Flex
       bg="white"

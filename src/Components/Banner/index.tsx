@@ -1,6 +1,6 @@
 import { Flex, Heading, Image, Text } from "@chakra-ui/react";
 
-export default function Banner() {
+export function Banner() {
   return (
     <Flex
       w="100%"
