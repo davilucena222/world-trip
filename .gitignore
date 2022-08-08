@@ -36,4 +36,4 @@ yarn-error.log*
 next-env.d.ts
 
 # gitpod
-.gitpod.yml
+.gitpod.yml*
