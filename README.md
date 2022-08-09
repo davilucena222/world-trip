@@ -15,7 +15,7 @@ This project was developed with the following tecnologies:
 - [Sass](https://sass-lang.com/)
 
 ## 💡 About the project 
-<p>World Trip is a website with tips for the best destinations in the world, before you visite a country or a city you could take a look at <a href="">World Trip</a> and stay on top of the best places to visit, spend a night, meet, tour and much more.</p>
+<p>World Trip is a website with tips for the best destinations in the world, before you visite a country or a city you could take a look at <a href="https://world-trip-eta.vercel.app/">World Trip</a> and stay on top of the best places to visit, spend a night, meet, tour and much more.</p>
 <p>World Trip offers for you great information resources, since traditions about the local and the best description of the destiny that you want to visit. Let's go, enjoy it.</p>
 
 ![image](https://user-images.githubusercontent.com/56702492/183690796-43c51915-96b8-4383-aa15-f6d09f32d6e8.png)
