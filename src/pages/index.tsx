@@ -1,5 +1,6 @@
 import { Flex, Heading } from "@chakra-ui/react";
 import { GetStaticProps } from "next";
+import Head from "next/head";
 import { Banner } from "../Components/Banner";
 import { Header } from "../Components/Header";
 import { Separator } from "../Components/Separator";
@@ -18,27 +19,33 @@ export interface ContinentProps {
 
 export default function Home({ continents }: ContinentProps) {
   return (
-    <Flex direction="column">
-      <Header />
-      <Banner />
-      <TravelTypes />
-      <Separator />
+    <>
+      <Head>
+        <title>World Tripe</title>
+      </Head>
 
-      <Heading
-        textAlign="center"
-        fontWeight="500"
-        mb={["5", "14"]}
-        fontSize={["lg", "3xl", "4xl"]}
-      >
-        Vamos nessa?<br />Então escolhe seu continente
-      </Heading>
+      <Flex direction="column">
+        <Header />
+        <Banner />
+        <TravelTypes />
+        <Separator />
 
-      <Slider continents={continents} />
-    </Flex>
+        <Heading
+          textAlign="center"
+          fontWeight="500"
+          mb={["5", "14"]}
+          fontSize={["lg", "3xl", "4xl"]}
+        >
+          Vamos nessa?<br />Então escolhe seu continente
+        </Heading>
+
+        <Slider continents={continents} />
+      </Flex>
+    </>
   )
 }
 
-export const getStaticProps: GetStaticProps = async() => {
+export const getStaticProps: GetStaticProps = async () => {
 
   const prismic = getPrismicClient();
 
