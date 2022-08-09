@@ -1,0 +1,70 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "continent",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "title": "previous",
+    "summary": "very",
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Consectetur ut qui enim in commodo esse ipsum sunt Lorem magna consectetur occaecat.",
+        "spans": []
+      }
+    ],
+    "slider_image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89"
+    },
+    "banner_image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a"
+    },
+    "countries": 44,
+    "languages": 45,
+    "cities": 10,
+    "cities_list": "basis",
+    "cities100": [
+      {
+        "thumbnail": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea"
+        },
+        "flag": {
+          "dimensions": {
+            "width": 900,
+            "height": 500
+          },
+          "alt": null,
+          "copyright": null,
+          "url": "https://images.unsplash.com/photo-1589321578146-4c1ba445cc88"
+        },
+        "city": "spread",
+        "country": "company"
+      }
+    ]
+  }
+}

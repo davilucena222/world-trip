@@ -1,11 +1,22 @@
 import { Flex, Heading } from "@chakra-ui/react";
+import { GetStaticProps } from "next";
 import { Banner } from "../Components/Banner";
 import { Header } from "../Components/Header";
 import { Separator } from "../Components/Separator";
 import { Slider } from "../Components/Slider";
 import { TravelTypes } from "../Components/TravelTypes";
+import { getPrismicClient } from "../services/prismic";
 
-export default function Home() {
+export interface ContinentProps {
+  continents: {
+    slug: string;
+    title: string;
+    summary: string;
+    image: string;
+  }[]
+}
+
+export default function Home({ continents }: ContinentProps) {
   return (
     <Flex direction="column">
       <Header />
@@ -22,7 +33,30 @@ export default function Home() {
         Vamos nessa?<br />Então escolhe seu continente
       </Heading>
 
-      <Slider />
+      <Slider continents={continents} />
     </Flex>
   )
+}
+
+export const getStaticProps: GetStaticProps = async() => {
+
+  const prismic = getPrismicClient();
+
+  const response = await prismic.getByType("continent");
+
+  const continents = response.results.map(continent => {
+    return {
+      slug: continent.uid,
+      title: continent.data.title,
+      summary: continent.data.summary,
+      image: continent.data.slider_image.url
+    }
+  })
+
+  return {
+    props: {
+      continents
+    },
+    revalidate: 1800,
+  }
 }
